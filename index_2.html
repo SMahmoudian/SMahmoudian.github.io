@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  SAHAND MAHMOUDIAN — ACADEMIC HOMEPAGE
+  ============================================================
+  HOW TO EDIT:
+  - Open in any plain text editor (Notepad, TextEdit, VS Code).
+  - Change only the text between > and < signs.
+  - Lines like this one (<!-- ... -->) are notes to you and never
+    appear on the website. Delete them whenever you like.
+  - To preview: double-click the file; it opens in your browser.
+  - Search for CHECK to find the few things I could not verify.
+  ============================================================
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Sahand Mahmoudian — Mathematics, University of Luxembourg</title>
+<meta name="description" content="Sahand Mahmoudian, doctoral researcher in mathematics at the University of Luxembourg. Lorentzian geometry and the Lorentzian conjecture.">
+
+<style>
+  :root {
+    --ink:    #16181d;
+    --muted:  #5f6673;
+    --rule:   #dcdee3;
+    --accent: #14508c;
+    --paper:  #ffffff;
+    --serif: "Charter", "Iowan Old Style", Georgia, "Times New Roman", serif;
+    --sans:  ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+    max-width: 46rem;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    -webkit-text-size-adjust: 100%;
+    counter-reset: sec;
+  }
+
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:hover { text-decoration-thickness: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  header { display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap; }
+  header img {
+    width: 132px; height: 132px;
+    object-fit: cover;
+    border-radius: 2px;
+    filter: grayscale(100%);   /* delete this line if you prefer colour */
+  }
+  h1 { font-size: 2rem; font-weight: 600; margin: 0 0 .3rem; letter-spacing: -0.01em; }
+  .role { font-family: var(--sans); font-size: .9rem; color: var(--muted); margin: 0 0 .9rem; }
+  .contact { font-family: var(--sans); font-size: .875rem; line-height: 1.9; margin: 0; }
+
+  section { margin-top: 3.25rem; }
+  h2 {
+    font-family: var(--sans);
+    font-size: .78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    color: var(--muted);
+    padding-bottom: .5rem;
+    margin: 0 0 1.25rem;
+    border-bottom: 1px solid var(--rule);
+    position: relative;
+  }
+  h2::before {
+    content: "\00A7" counter(sec);
+    counter-increment: sec;
+    position: absolute;
+    left: -2.75rem;
+    color: var(--rule);
+  }
+
+  ul.plain { list-style: none; padding: 0; margin: 0; }
+  ul.teaching li { margin-bottom: .6rem; }
+  .term { font-family: var(--sans); font-size: .8rem; color: var(--muted); }
+
+  footer {
+    margin-top: 4.5rem; padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    font-family: var(--sans); font-size: .78rem; color: var(--muted);
+  }
+
+  @media (max-width: 640px) {
+    body { padding: 2.5rem 1.25rem 4rem; }
+    h2::before { display: none; }
+    header img { width: 96px; height: 96px; }
+    h1 { font-size: 1.6rem; }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <!-- Save a square photo next to this file, named photo.jpg.
+       If you don't want a photo, delete the <img ...> line below. -->
+  <img src="photo.jpg" alt="Portrait of Sahand Mahmoudian">
+
+  <div>
+    <h1>Sahand Mahmoudian</h1>
+    <p class="role">Doctoral researcher in Mathematics · University of Luxembourg</p>
+    <p class="contact">
+      <!-- CHECK: I could not read your email address, so this is the standard
+           uni.lu format. Confirm it before publishing. Written this way to
+           slow down spam bots. -->
+      sahand.mahmoudian [at] uni [dot] lu<br>
+      Department of Mathematics, Maison du Nombre<br>
+      6 avenue de la Fonte, L-4364 Esch-sur-Alzette<br>
+      <!-- Add cv.pdf next to this file, then this link works. -->
+      <a href="cv.pdf">CV</a> ·
+      <a href="https://www.uni.lu/fstm-en/people/sahand-mahmoudian/">University profile</a>
+    </p>
+  </div>
+</header>
+
+<section>
+  <h2>Research</h2>
+  <p>
+    I am a doctoral researcher in the Department of Mathematics at the University
+    of Luxembourg, where I am a member of the PRIDE&nbsp;GRACE project under the
+    supervision of <a href="https://www.uni.lu/fstm-en/people/karin-melnick/">Prof. Karin Melnick</a>.
+  </p>
+  <p>
+    My work concerns the Lorentzian conjecture. I study the causal and curvature
+    structures of Lorentzian manifolds, with the aim of understanding how the
+    geometry of spacetime constrains — and is constrained by — the physics it
+    carries. The questions sit at the interface of differential geometry and the
+    mathematical foundations of general relativity.
+  </p>
+  <p>
+    I hold a Bachelor's degree in Mathematics and its Applications from the Iran
+    University of Science and Technology and a Master's degree from the Sharif
+    University of Technology.
+  </p>
+</section>
+
+<section>
+  <h2>Teaching</h2>
+  <ul class="plain teaching">
+    <li>Algebra I <span class="term">— Winter 2025&ndash;2026</span></li>
+    <li>Analysis II <span class="term">— Summer 2025&ndash;2026</span></li>
+  </ul>
+</section>
+
+<!--
+  WHEN YOU HAVE YOUR FIRST PREPRINT, paste this block back in above the
+  Teaching section and fill it in:
+
+  <section>
+    <h2>Preprints</h2>
+    <ul class="plain">
+      <li>
+        <em>Title of the paper</em><br>
+        <span class="term">Preprint, 2027.</span>
+        <a href="#">arXiv:2701.00000</a>
+      </li>
+    </ul>
+  </section>
+-->
+
+<footer>
+  Last updated August 2026.
+</footer>
+
+<!--
+  OPTIONAL: delete the two arrow-lines below (the one starting <!-- and the one
+  ending --) to switch on LaTeX rendering. Then you can write things like
+  $(M,g)$ or \(\mathrm{Ric}\) directly in your text.
+-->
+<!--
+<script>window.MathJax = {tex: {inlineMath: [['$','$'], ['\\(','\\)']]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+-->
+
+</body>
+</html>
